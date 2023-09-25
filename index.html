@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Caveat&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+    <style>
+        .profile-pic {
+            border-radius: 50%;
+        }
+        .container {
+            padding: 20px;
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .p {
+            font-family: 'Caveat', cursive;
+            font-size: 2rem;
+            text-align: center;
+            margin: 0;
+        }
+        .details {
+            margin-top: 10px;
+        }
+        button {
+            height: 50px;
+            width: 150px;
+            background-color: red;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            border: 0;
+            margin: 20px auto;
+            display: block;
+        }
+
+        @media (min-width: 1200px) {
+            .profile-pic {
+                max-width: 100%;
+            }
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .profile-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .p {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div><img src="./location.jpg" alt="location-image" style="max-width: 100%;" height="auto"></div>
+    <div class="container">
+        <div class="profile-info">
+            <img src="./prof-pic.png" alt="black-girl-vector" height="150" class="profile-pic">
+            <div class="details">
+                <p class="p">Salisu Ali <br> Oshodi, Lagos</p>
+                <p class="p">25 min</p>
+            </div>
+        </div>
+        <div class="share">
+            <button>Share Location</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
